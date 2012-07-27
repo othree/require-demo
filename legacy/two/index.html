@@ -1,0 +1,17 @@
+<body>
+</body>
+
+<script>
+
+var srcs = ['account', 'device', 'data', 'render'];
+
+var body = document.getElementsByTagName('body')[0];
+
+for (var i in srcs) {
+    var src = 'js/' + srcs[i] + '.js';
+    var script = document.createElement('script');
+    script.setAttribute('src', src);
+    body.appendChild(script);
+}
+
+</script>

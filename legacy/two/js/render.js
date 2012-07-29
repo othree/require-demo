@@ -1,12 +1,13 @@
 
-var render = {
+var Mrender = {
     init: function () {
-        if (account && device && data) {
+        if (Maccount && Mdevice && Mdata) {
             console.log('render ready');
+            document.getElementById('render').style.display = 'block';
         } else {
             console.log('render fail');
         }
     }
 }
 
-render.init();
+Mrender.init();

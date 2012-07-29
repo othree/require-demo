@@ -5,6 +5,7 @@ var device = {
     init: function () {
         if (account) {
             console.log('device ready');
+            document.getElementById('device').style.display = 'block';
         } else {
             console.log('device fail');
         }

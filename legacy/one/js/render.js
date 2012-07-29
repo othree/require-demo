@@ -5,6 +5,7 @@ var render = {
     init: function () {
         if (account && device && data) {
             console.log('render ready');
+            document.getElementById('render').style.display = 'block';
         } else {
             console.log('render fail');
         }

@@ -1,12 +1,13 @@
 
-var data = {
+var Mdata = {
     init: function () {
-        if (account && device) {
+        if (Maccount && Mdevice) {
             console.log('data ready');
+            document.getElementById('data').style.display = 'block';
         } else {
             console.log('data fail');
         }
     }
 }
 
-data.init();
+Mdata.init();

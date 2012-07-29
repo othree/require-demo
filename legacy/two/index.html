@@ -4,6 +4,7 @@
 
 var ll = function () {
     var body = document.getElementsByTagName('body')[0];
+
     var srcs = ['jquery-1.7.2.min', 'underscore-min', 'backbone-min'];
 
     for (var i in srcs) {
@@ -24,7 +25,16 @@ var ll = function () {
 };
 
 </script>
+<style>
+
+    p { display: none; }
+
+</style>
 </head>
 
 <body onload="ll()">
+    <p id="account">Account module loadded</p>
+    <p id="device">Device module loadded</p>
+    <p id="data">Data module loadded</p>
+    <p id="render">Render module loadded</p>
 </body>

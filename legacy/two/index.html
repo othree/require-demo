@@ -1,17 +1,30 @@
-<body>
-</body>
 
+<head>
 <script>
 
-var srcs = ['account', 'device', 'data', 'render'];
+var ll = function () {
+    var body = document.getElementsByTagName('body')[0];
+    var srcs = ['jquery-1.7.2.min', 'underscore-min', 'backbone-min'];
 
-var body = document.getElementsByTagName('body')[0];
+    for (var i in srcs) {
+        var src = '../../js/vender/' + srcs[i] + '.js';
+        var script = document.createElement('script');
+        script.setAttribute('src', src);
+        body.appendChild(script);
+    }
 
-for (var i in srcs) {
-    var src = 'js/' + srcs[i] + '.js';
-    var script = document.createElement('script');
-    script.setAttribute('src', src);
-    body.appendChild(script);
-}
+    var srcs = ['account', 'device', 'data', 'render'];
+
+    for (var i in srcs) {
+        var src = 'js/' + srcs[i] + '.js';
+        var script = document.createElement('script');
+        script.setAttribute('src', src);
+        body.appendChild(script);
+    }
+};
 
 </script>
+</head>
+
+<body onload="ll()">
+</body>
